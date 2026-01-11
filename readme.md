@@ -116,3 +116,19 @@ CREATE TABLE market_fisleri (
 
 
 - **NAT Strategy:** The project is configured to use a **NAT Gateway** by default to ensure maximum stability and zero maintenance. However, since NAT Gateways incur a fixed hourly cost, the `main.tf` file contains a commented-out configuration for a **NAT Instance (t2.micro)**. Developers can switch to the NAT Instance to reduce AWS costs to nearly zero during the testing phase.
+
+
+
+
+## Planned Improvements
+
+This project is designed as a learning-focused, end-to-end hybrid cloud architecture and will continue to evolve.  
+Future improvements are planned to enhance security, scalability, and operational maturity, including:
+
+- Replacing broad IAM managed policies with least-privilege custom policies
+- Managing database credentials using AWS Secrets Manager or SSM Parameter Store
+- Improving high availability with multi-AZ networking where applicable
+- Enhancing observability beyond default CloudWatch logging (custom metrics, alarms, and dashboards)
+- Reviewing cost optimization opportunities (NAT Gateway, endpoints, and service usage)
+
+These enhancements are intentionally planned for later iterations to reflect real-world, incremental system design.
